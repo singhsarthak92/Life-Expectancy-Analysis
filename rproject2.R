@@ -11,7 +11,7 @@ summary(data1)
 library(dplyr)
 library(officer)
 
-# Assuming 'data1' is your dataset
+#  'data1' is your dataset
 # Calculate summary statistics for key variables
 rt <- summary(data1 %>% select(Life.expectancy, Alcohol, BMI, GDP, infant.deaths))
 
@@ -74,7 +74,7 @@ predict(regmod,newdata = data.frame(Alcohol=3,percentage.expenditure=67,BMI=20))
 
 library(corrplot)
 
-# Assume 'data1' is your dataset
+#  'data1' is your dataset
 # Selecting relevant columns for correlation analysis
 selected_columns <- data1 %>% select(Life.expectancy, Alcohol, BMI, GDP, infant.deaths)
 
